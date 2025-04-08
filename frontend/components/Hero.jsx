@@ -7,12 +7,12 @@ import { useState } from "react";
 
 export default function Hero() {
   const [buttonColorIndex, setButtonColorIndex] = useState(0); // Start with the first color
-  const colors = ['primary', 'secondary', 'danger', 'success', 'warning']; // Array of colors
+  const colors = ["primary", "secondary", "danger", "success", "warning"]; // Array of colors
   const router = useRouter();
 
   const handleClick = () => {
     setButtonColorIndex((prevIndex) => (prevIndex + 1) % colors.length);
-    router.push('/enroll'); // Navigate to the enroll page
+    router.push("/enroll"); // Navigate to the enroll page
   };
 
   return (
@@ -25,12 +25,21 @@ export default function Hero() {
       <h1 className="hero-title">NeoMinds 🌸</h1>
       <p className="hero-subtitle">The Future Starts with TechBloom</p>
 
-      <button 
-        className={`hero-button ${colors[buttonColorIndex]}`} 
+      <button
+        className={`hero-button ${colors[buttonColorIndex]}`}
         onClick={handleClick}
       >
         Enroll Your Child
       </button>
+      <img src="/boy.jpg" alt="Kid learning" className="hero-img img1" />
+      <img src="/girl.jpg" alt="Girl coding" className="hero-img img2" />
+      <img src="/teach.jpg" alt="Classroom" className="hero-img img3" />
+      <img
+        src="/woman.jpg"
+        alt="Parent helping child"
+        className="hero-img img4"
+      />
+      <img src="boyy.jpg" alt="Fun learning" className="hero-img img5" />
     </motion.section>
   );
 }

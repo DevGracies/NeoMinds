@@ -3,7 +3,8 @@ import Hero from "../components/Hero";
 import Programs from "../components/programs";
 import Testimonials from "../components/Testimonials";
 import HowItWorks from "./how-it-works";
-import Contact from "./Contact"
+import Contact from "./Contact";
+import About from "@/components/About";
 
 export default function Home() {
   return (
@@ -13,10 +14,11 @@ export default function Home() {
       </Head>
       <main>
         <Hero />
+        <About />
         <Programs />
         <HowItWorks />
         <Testimonials />
-        <Contact/>
+        <Contact />
       </main>
     </>
   );
