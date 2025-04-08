@@ -1,0 +1,73 @@
+/* Section Styles */
+.programs-section {
+    min-height: 100vh;
+    padding: 4rem 1.5rem;
+    background-color: white;
+  }
+  
+  .programs-title {
+    font-size: 2.25rem; /* text-4xl */
+    font-weight: bold;
+    text-align: center;
+    color: #1e40af; /* techBlue */
+    margin-bottom: 3rem;
+  }
+  
+  /* Grid Styles */
+  .programs-grid {
+    display: grid;
+    gap: 2rem;
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+  
+  @media (min-width: 768px) {
+    .programs-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* Card Styles */
+  .program-card {
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    color: white;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .program-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .program-emoji {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .program-title {
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: 600; /* font-semibold */
+  }
+  
+  .program-desc {
+    margin-top: 0.5rem;
+  }
+  
+  /* Color Variants */
+  .pink-to-purple {
+    background: linear-gradient(to bottom right, #fbcfe8, #7c3aed); /* from-pink-200 to-bloomPurple */
+  }
+  
+  .blue-to-techBlue {
+    background: linear-gradient(to bottom right, #bfdbfe, #1e40af); /* from-blue-200 to-techBlue */
+  }
+  
+  .green-to-bloomGreen {
+    background: linear-gradient(to bottom right, #d1fae5, #4ade80); /* from-green-200 to-bloomGreen */
+  }
+  
+  .purple-to-bloomPurple {
+    background: linear-gradient(to bottom right, #e9d5ff, #7c3aed); /* from-purple-200 to-bloomPurple */
+  }
+  

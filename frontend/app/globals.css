@@ -1,0 +1,21 @@
+/* Base Reset (similar to @tailwind base) */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Optional: Smooth font rendering and default line-height */
+html {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Body Styles */
+body {
+  background-color: #ffffff; /* Tailwind's bg-white */
+  color: #1f2937;            /* Tailwind's text-gray-800 */
+  font-family: 'Futuristic', sans-serif; /* Assuming you imported the font */
+}

@@ -1,0 +1,56 @@
+/* Section Styles */
+.how-it-works-section {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, white, rgba(70, 205, 93, 0.1)); /* from-white to-bloomGreen/10 */
+    padding: 5rem 1.5rem; /* py-20 px-6 */
+  }
+  
+  .how-it-works-title {
+    font-size: 2.25rem; /* text-4xl */
+    font-weight: bold;
+    text-align: center;
+    color: #9b4de6; /* bloomPurple */
+    margin-bottom: 4rem; /* mb-16 */
+  }
+  
+  /* Steps Container */
+  .steps-container {
+    max-width: 50rem;
+    margin: 0 auto;
+  }
+  
+  /* Step Card Styles */
+  .step-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 2.5rem; /* Space between steps */
+  }
+  .step-card:first-child {
+    margin-top: 0; /* Remove margin for the first step */
+  } 
+  
+  .check-icon {
+    width: 2rem; /* w-8 */
+    height: 2rem; /* h-8 */
+    color: #4ade80; /* bloomGreen */
+    margin-top: 0.25rem; /* mt-1 */
+  }
+  
+  .step-title {
+    font-size: 1.25rem; /* text-xl */
+    font-weight: 600; /* font-semibold */
+    color: #1e40af; /* techBlue */
+  }
+  
+  .step-desc {
+    color: #4b5563; /* text-gray-700 */
+    margin-top: 0.5rem;
+  }
+  
+
+  

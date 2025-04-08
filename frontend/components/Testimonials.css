@@ -1,0 +1,82 @@
+/* Section Styles */
+.testimonials-section {
+    min-height: 100vh;
+    padding: 5rem 1.5rem; /* py-20 px-6 */
+     background: linear-gradient(to bottom, rgba(144, 238, 144, 0.1), white); /* Adjust gradient as needed */
+  }
+  
+  /* Title Styles */
+  .testimonials-title {
+    font-size: 2.25rem; /* text-4xl */
+    font-weight: bold;
+    text-align: center;
+    color: #1e40af; /* techBlue */
+    margin-bottom: 3rem; /* mb-12 */
+  }
+  
+  .faqs-title {
+    font-size: 2.5rem; /* text-3xl */
+    font-weight: bold;
+    text-align: center;
+    color: #9b4de6; /* bloomPurple */
+    margin-top: 6rem; /* mt-24 */
+    margin-bottom: 2rem; /* mb-8 */
+  }
+  
+  /* Testimonials Grid */
+  .testimonials-grid, .faqs-container  {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem; /* gap-8 */
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+  
+  /* Testimonial Card Styles */
+  .testimonial-card {
+    background: linear-gradient(to bottom right, #e9d5ff, #a7f3d0); /* from-purple-100 to-green-100 */
+    padding: 1.5rem; /* p-6 */
+    border-radius: 1rem; /* rounded-xl */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* shadow-md */
+  }
+  
+  .testimonial-quote {
+    font-style: italic;
+    font-size: 1.125rem; /* text-lg */
+  }
+  
+  .testimonial-author {
+    margin-top: 1rem; /* mt-4 */
+    font-weight: 600; /* font-semibold */
+    font-size: 0.875rem; /* text-sm */
+    color: #4b5563; /* text-gray-700 */
+  }
+  
+  /* FAQ Card Styles */
+  .faq-card {
+    padding: 1.5rem; /* p-6 */
+    background-color: #e0f7fa; /* bg-blue-50 */
+    border-radius: 1rem; /* rounded-xl */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* shadow */
+  }
+  
+  .faq-question {
+    font-weight: bold;
+    font-size: 1.125rem; /* text-xl */
+    color: #1e40af; /* techBlue */
+  }
+  
+  .faq-answer {
+    color: #4b5563; /* text-gray-800 */
+  }
+  
+  
+@media (max-width: 768px) {
+  .faq-title {
+    font-size: 2rem;
+  }
+
+  .faq-question {
+    font-size: 1.25rem;
+  }
+}

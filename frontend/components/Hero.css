@@ -1,0 +1,105 @@
+.hero-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+    background: linear-gradient(to bottom right, #7C3AED, #1E40AF); /* bloomPurple to techBlue */
+    color: white;
+    position: relative; /* This can help with the animation */
+    overflow: hidden; 
+  }
+  
+  .hero-title {
+    font-size: 3rem; /* approx. Tailwind's text-5xl */
+    font-weight: bold;
+  }
+  
+  @media (min-width: 768px) {
+    .hero-title {
+      font-size: 3.75rem; /* md:text-6xl */
+    }
+  }
+  
+  .hero-subtitle {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    font-style: italic;
+  }
+  
+  .hero-button {
+    margin-top: 2rem;
+    background-color: #A3E635; /* bloomGreen */
+    color: black;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .hero-button:hover {
+    transform: scale(1.05);
+  }
+  
+
+  /* Default Button Style */
+.hero-button {
+  padding: 1rem 2rem;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition for color changes */
+  background-color: #4CAF50; /* Default green for 'primary' */
+  color: white;
+  border: none;
+}
+
+/* Primary Color */
+.hero-button.primary {
+  background-color: #4CAF50;
+}
+
+.hero-button.primary:hover {
+  background-color: #45a049;
+}
+
+/* Secondary Color */
+.hero-button.secondary {
+  background-color: #007BFF; /* Blue */
+}
+
+.hero-button.secondary:hover {
+  background-color: #0056b3;
+}
+
+/* Danger Color */
+.hero-button.danger {
+  background-color: #f44336; /* Red */
+}
+
+.hero-button.danger:hover {
+  background-color: #d32f2f;
+}
+
+/* Success Color */
+.hero-button.success {
+  background-color: #4CAF50; /* Green */
+}
+
+.hero-button.success:hover {
+  background-color: #388e3c;
+}
+
+/* Warning Color */
+.hero-button.warning {
+  background-color: #ff9800; /* Orange */
+}
+
+.hero-button.warning:hover {
+  background-color: #e65100;
+}
