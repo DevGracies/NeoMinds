@@ -1,7 +1,15 @@
 export const handleEnrollment = (req, res) => {
-    const { parentName, childName, email, age, program } = req.body;
+    const {
+       parentName,
+      email,
+      phone,
+      childName,
+      ageGroup,
+      startDate,
+      notes
+     } = req.body;
   
-    if (!parentName || !childName || !email || !age || !program) {
+    if (!parentName || !childName || !email || !ageGroup|| phone || startDate || notes) {
       return res.status(400).json({ message: 'All fields are required.' });
     }
   

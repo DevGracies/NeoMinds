@@ -1,69 +1,104 @@
-/* Container Styles */
-.enroll-container {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(to bottom, white, rgba(124, 58, 237, 0.1)); /* from-white to bloomPurple/10 */
-    padding: 0 1rem;
-  }
-  
-  /* Form Styles */
-  .enroll-form {
-    background: white;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-    padding: 2rem;
-    border-radius: 1rem;
-    max-width: 32rem;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-  
-  /* Title Styles */
-  .enroll-title {
-    font-size: 2rem; /* text-3xl */
-    font-weight: bold;
-    color: #1e40af; /* techBlue */
-    text-align: center;
-  }
-  
-  /* Input & Select Field Styles */
-  .input-field {
-    width: 100%;
-    padding: 0.75rem;
-    border: 1px solid #e5e7eb; /* Tailwind's border color */
-    border-radius: 0.5rem;
-    font-size: 1rem;
-  }
-  
-  /* Submit Button */
-  .submit-button {
-    width: 100%;
-    background-color: #4ade80; /* bloomGreen */
-    color: black;
-    padding: 0.75rem;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out;
-  }
-  
-  .submit-button:hover {
-    transform: scale(1.05);
-  }
-  
-  /* Status Message */
-  .status-message {
-    text-align: center;
-    margin-top: 0.5rem;
-  }
-  
-  .success {
-    color: #16a34a; /* green-600 */
-  }
-  
-  .error {
-    color: #dc2626; /* red-600 */
-  }
-  
+.enroll-section {
+  min-height: 100vh;
+  background: linear-gradient(to bottom left, #f3e8ff, #ffffff, #d1fae5);
+  padding: 4rem 1.5rem;
+}
+
+.enroll-header {
+  max-width: 64rem;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.enroll-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #6b21a8;
+}
+
+.enroll-subtext {
+  color: #4b5563;
+  font-size: 1.125rem;
+  margin-top: 1rem;
+  max-width: 36rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.highlight {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.enroll-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+  max-width: 48rem;
+  margin: 0 auto;
+  display: grid;
+  gap: 1.5rem;
+  border: 1px solid #e5e7eb;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.875rem;
+  color: #374151;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: #6b21a8;
+  color: white;
+  font-weight: 600;
+  font-size: 1.125rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #5b1797;
+}
+
+.success-box {
+  max-width: 36rem;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2.5rem;
+  background-color: white;
+  border-radius: 1.25rem;
+  box-shadow: 0 5px 15px rgba(0, 128, 0, 0.05);
+  border: 1px solid #bbf7d0;
+}
+
+.success-icon {
+  margin: 0 auto 1rem;
+  color: #22c55e;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.success-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #16a34a;
+}
+
+.success-text {
+  margin-top: 1rem;
+  color: #374151;
+}
