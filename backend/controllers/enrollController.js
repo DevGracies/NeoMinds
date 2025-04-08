@@ -1,21 +1,36 @@
-export const handleEnrollment = (req, res) => {
+// controllers/enrollController.js
+import Enrollment from "../models/Enrollment.js";
+
+export const handleEnrollment = async (req, res) => {
+  try {
     const {
-       parentName,
+      parentName,
       email,
       phone,
       childName,
       ageGroup,
       startDate,
-      notes
-     } = req.body;
-  
-    if (!parentName || !childName || !email || !ageGroup|| phone || startDate || notes) {
-      return res.status(400).json({ message: 'All fields are required.' });
-    }
-  
-    console.log('📩 New Enrollment:', req.body);
-  
-    // Here you can insert into a DB or trigger an email
-    res.status(200).json({ message: 'Enrollment received successfully!' });
-  };
-  
+      notes,
+    } = req.body;
+
+    console.log("📩 Enrollment Data Received:", req.body);
+
+    const newEnrollment = new Enrollment({
+      parentName,
+      email,
+      phone,
+      childName,
+      ageGroup,
+      startDate,
+      notes,
+    });
+
+    await newEnrollment.save();
+
+    console.log("✅ Enrollment saved to MongoDB!");
+    res.status(200).json({ message: "Enrollment successful" });
+  } catch (error) {
+    console.error("❌ Error saving enrollment:", error);
+    res.status(500).json({ message: "Server error during enrollment." });
+  }
+};
