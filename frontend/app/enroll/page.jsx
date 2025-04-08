@@ -27,12 +27,14 @@ export default function Enroll() {
     e.preventDefault();
     setSubmitted(true);
     try {
-      const res = await fetch("http://https://neomind-techbloom.onrender.com/enroll", {
+      const res = await fetch("https://neomind-techbloom.onrender.com/enroll", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
+      console.log("Response:", res);
       const data = await res.json();
+      console.log("Data:", data);
       if (res.ok) {
         setStatus("success");
         setFormData({
