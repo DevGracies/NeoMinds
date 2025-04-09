@@ -102,6 +102,18 @@ export default function Enroll() {
               />
             </div>
             <div>
+              <label className="form-label">📱 Parent's Phone Number</label>
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Parent's Phone Number"
+                value={formData.phone}
+                onChange={handleChange}
+                required
+                className="form-input"
+              />
+            </div>
+            <div>
               <label className="form-label">👦 Child's Name</label>
               <input
                 type="text"
