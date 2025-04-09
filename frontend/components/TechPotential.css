@@ -1,0 +1,135 @@
+.tech-section {
+    background: linear-gradient(to bottom right, #f3e8ff, #ffffff, #ecfdf5);
+    padding: 5rem 1.5rem;
+    color: #2d2d2d;
+    font-family: sans-serif;
+  }
+  
+  .tech-header {
+    max-width: 900px;
+    margin: 0 auto 3rem;
+    text-align: center;
+  }
+  
+  .tech-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #1e40af; /* techBlue */
+  }
+  
+  .tech-subtitle {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    color: #9333ea; /* bloomPurple */
+    font-style: italic;
+  }
+  
+  .tech-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: 1fr;
+  }
+  
+  @media (min-width: 768px) {
+    .tech-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  .tech-box {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid;
+  }
+  
+  .tech-box-blue {
+    border-color: #1e40af;
+  }
+  
+  .tech-box-green {
+    border-color: #10b981;
+  }
+  
+  .tech-box-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .tech-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .tech-list-title {
+    font-weight: 600;
+    color: #1e40af;
+  }
+  
+  .tech-list-desc {
+    color: #4b5563;
+  }
+  
+  .tech-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 0.5rem;
+    font-size: 0.95rem;
+  }
+  
+  .tech-table thead {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.75rem;
+    color: #6b7280;
+  }
+  
+  .tech-table tbody tr {
+    background-color: #faf5ff;
+    border-radius: 0.5rem;
+  }
+  
+  .tech-table td {
+    padding: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .tech-cta {
+    margin-top: 5rem;
+    text-align: center;
+  }
+  
+  .tech-cta-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1e40af;
+    margin-bottom: 1rem;
+  }
+  
+  .tech-cta-text {
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
+    color: #4b5563;
+  }
+  
+  .tech-cta-btn {
+    display: inline-block;
+    background: #9333ea;
+    color: white;
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    border-radius: 999px;
+    text-decoration: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .tech-cta-btn:hover {
+    transform: scale(1.05);
+  }
+  

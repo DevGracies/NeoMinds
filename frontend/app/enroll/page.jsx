@@ -4,6 +4,7 @@ import Head from "next/head";
 import "./Enroll.css";
 import { useState } from "react";
 import { CheckCircle } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 export default function Enroll() {
   const [submitted, setSubmitted] = useState(false);
@@ -16,16 +17,18 @@ export default function Enroll() {
     phone: "",
     notes: "",
   });
-
+  const router = useRouter();
+  const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState("");
-
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
     setSubmitted(true);
+
     try {
       const res = await fetch("https://neomind-techbloom.onrender.com/enroll", {
         method: "POST",
@@ -36,6 +39,7 @@ export default function Enroll() {
       const data = await res.json();
       console.log("Data:", data);
       if (res.ok) {
+        setLoading(false);
         setStatus("success");
         setFormData({
           parentName: "",
@@ -52,6 +56,7 @@ export default function Enroll() {
     } catch (error) {
       console.error(error);
       setStatus("error");
+      setLoading(false);
     }
   };
 
@@ -153,6 +158,15 @@ export default function Enroll() {
           </form>
         ) : (
           <>
+            {loading && (
+              <div className="loading-animation">
+                <div className="spinner" />
+                <p className="loading-text">
+                  Planting your TechBloom seed... 🌱
+                </p>
+              </div>
+            )}
+
             {status === "success" && (
               <div className="success-box">
                 <CheckCircle className="success-icon" />
@@ -161,6 +175,12 @@ export default function Enroll() {
                   Thank you for enrolling. A member of our team will reach out
                   soon with next steps! 🌸
                 </p>
+                <button
+                  onClick={() => router.push("/")}
+                  className="go-home-btn"
+                >
+                  🏡 Go Back Home
+                </button>
               </div>
             )}
             {status === "error" && (
