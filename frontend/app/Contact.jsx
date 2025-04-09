@@ -73,7 +73,7 @@ export default function Contact() {
             Or reach us directly via <br />
             📱{" "}
             <a
-              href="https://wa.me/09045954844"
+              href="https://wa.me/2349016498621"
               target="_blank"
               className="contact-link"
             >
