@@ -14,7 +14,7 @@ export default function Home() {
         <title>NeoMinds | TechBloom</title>
       </Head>
       <main>
-        <Hero />
+        {/* <Hero /> */}
         <TechPotential />
         <About />
         <Programs />
