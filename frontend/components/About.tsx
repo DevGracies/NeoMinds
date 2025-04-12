@@ -2,14 +2,14 @@ import Head from 'next/head';
 import  "./About.css"
 
 const taglines = [
+  'Every Child is a Blooming Mind.',
+  'We don’t just teach tech—we build thinkers with heart.',
+  'At NeoMinds, curiosity is celebrated.',
   'Shaping brilliant minds for a digital tomorrow.',
-  'The new mind starts here.',
   'Innovative learning for the next-gen coder.',
   'Empowering kids with future-proof skills.',
-  'Where young minds grow through code.',
   'Planting seeds of innovation in every child.',
   'Watch your child bloom in tech.',
-  'Turning curiosity into code.',
 ];
 
 export default function About() {
