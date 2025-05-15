@@ -2,7 +2,7 @@
 
 import Head from "next/head";
 import { useState } from "react";
-import "./Contact.css"; // Updated styles
+import "./Contact.css"; 
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -109,7 +109,7 @@ export default function Contact() {
             <div className="card secondary">
               <h4>💡 Need a quick call?</h4>
               <p>Book a 15-min consultation with a NeoMinds educator</p>
-              <a href="mailto:hello@neominds.io" className="btn-outline">
+              <a href="mailto:officialneominds@gmail.com" className="btn-outline">
                 Request a Call
               </a>
             </div>

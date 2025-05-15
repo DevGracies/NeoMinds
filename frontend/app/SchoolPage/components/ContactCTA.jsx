@@ -2,7 +2,7 @@
 
 import React from "react";
 import "./ContactCTA.css";
-import { Mail, Phone, MapPin, MessageSquareHeart } from "lucide-react";
+import { Mail, Phone, MapPin, MessageSquareHeart, MessageCircle , } from "lucide-react";
 import Image from "next/image";
 
 const ContactCTA = () => (
@@ -24,8 +24,8 @@ const ContactCTA = () => (
             </a>
           </li>
           <li>
-            <Phone size={20} />{" "}
-            <a href="tel:+2349016496621">+234 901 649 6621</a>
+            <MessageCircle  size={20} />{" "}
+            <a  href="https://wa.me/2349016498621" target="_blank">+234 901 649 6621</a>
           </li>
           <li>
             <MapPin size={20} /> Lagos, Nigeria — Available Nationwide (Online & On-Site)
@@ -36,7 +36,7 @@ const ContactCTA = () => (
         </ul>
 
         <div className="cta-buttons">
-          <a href="mailto:officialNeominds@gmail.com" className="cta-button primary">
+          <a href="mailto:officialneominds@gmail.com" className="cta-button primary">
             📩 Send Us an Email
           </a>
           <a href="tel:+2349016496621" className="cta-button secondary">
