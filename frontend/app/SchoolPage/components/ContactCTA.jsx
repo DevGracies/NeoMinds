@@ -19,8 +19,8 @@ const ContactCTA = () => (
         <ul className="contact-info">
           <li>
             <Mail size={20} />{" "}
-            <a href="mailto:officialNeominds@gmail.com">
-              officialNeominds@gmail.com
+            <a href="mailto:officialneominds@gmail.com">
+              officialneominds@gmail.com
             </a>
           </li>
           <li>
