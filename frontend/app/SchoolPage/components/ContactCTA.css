@@ -1,0 +1,95 @@
+.contact-cta {
+    padding: 5rem 2rem; font-family: "Segoe UI", sans-serif;
+    color: #000;
+  }
+  
+  .contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  
+  .contact-text h2 {
+    font-size: 2.6rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: #00A86B;
+  }
+  
+  .contact-text p {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem 0;
+  }
+  
+  .contact-info li {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    font-size: 1rem;
+    color: #1f1f1f;
+    margin-bottom: 0.8rem;
+  }
+  
+  .contact-info a {
+    color: #00A86B;
+    text-decoration: none;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .cta-button {
+    padding: 0.8rem 1.4rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .cta-button.primary {
+    background-color: #00A86B;
+    color: #fff;
+  }
+  
+  .cta-button.primary:hover {
+    background-color: #00A86B;
+  }
+  
+  .cta-button.secondary {
+    background-color: transparent;
+    border: 2px solid #00A86B;
+    color: #00A86B;
+  }
+  
+  .cta-button.secondary:hover {
+    background-color: #e0ffe8;
+  }
+  
+  .contact-image img {
+    width: 100%;
+    max-width: 500px;
+    object-fit: contain;
+  }
+  

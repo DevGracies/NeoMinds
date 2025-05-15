@@ -1,0 +1,102 @@
+.curriculum-tabs {
+  padding: 4rem 2rem;
+  background: #e0ffe8;
+  font-family: "Segoe UI", sans-serif;
+  color: #1a1a1a;
+  max-width: 1100px;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 168, 107, 0.1);
+  transition: all 0.3s ease;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  color: #00a86b;
+  margin-bottom: 0.3rem;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 2.5rem;
+}
+
+.tabs-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  padding: 0.75rem 1.75rem;
+  background: white;
+  border: 2px solid #00a86b;
+  color: #00a86b;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.tab-btn:hover {
+  background: #00a86b;
+  color: white;
+}
+
+.tab-btn.active {
+  background: #00a86b;
+  color: white;
+  border-color: #00a86b;
+}
+
+.tab-panel {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+}
+
+.tab-panel:hover {
+  transform: scale(1.01);
+}
+
+.track-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #00a86b;
+  margin-bottom: 0.8rem;
+}
+
+.track-desc {
+  font-size: 1.05rem;
+  color: #444;
+  margin-bottom: 1.8rem;
+}
+
+.track-list {
+  list-style: none;
+  padding: 0;
+}
+
+.track-item {
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  background: #f5fff8;
+  border-left: 5px solid #00a86b;
+  border-radius: 8px;
+  color: #222;
+  transition: background 0.3s ease;
+}
+
+.track-item:hover {
+  background: #e0ffe8;
+}

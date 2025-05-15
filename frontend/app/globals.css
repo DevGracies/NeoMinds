@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+:root {
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+}
 /* Base Reset (similar to @tailwind base) */
 *,
 *::before,
@@ -14,8 +22,95 @@ html {
 }
 
 /* Body Styles */
+:root {
+  --primary-color: #00A86B;
+  --accent-color: #1a1a40;
+  --text-dark: #1f2937;
+  --text-light: #555;
+  --background: #f9f9fc;
+}
+
 body {
   background-color: #ffffff; /* Tailwind's bg-white */
   color: #1f2937;            /* Tailwind's text-gray-800 */
   font-family: 'Futuristic', sans-serif; /* Assuming you imported the font */
 }
+a {
+  color: #00A86B;
+  text-decoration: underline;
+}
+
+.first-section {
+  padding: 4rem 2rem;
+  background-color: #f9f9fc;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-grid {
+  display: flex;
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+  /* Desktop: side by side */
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.first-text {
+  flex: 1;
+}
+
+.first-text h3 {
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+  color: #000;
+  margin-bottom: 1rem;
+    line-height: 1;
+
+}
+
+.line {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1rem;
+    line-height: 1;
+}
+
+.description {
+  line-height: 1;
+  color: #000;
+}
+
+.first-image {
+  flex: 1;
+}
+
+.first-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  display: block;
+}
+
+/* Responsive: Stack image below text on small screens */
+@media (max-width: 768px) {
+  .first-grid {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .first-text {
+    text-align: center;
+  }
+
+  .first-image {
+    width: 100%;
+  }
+}
+
+
