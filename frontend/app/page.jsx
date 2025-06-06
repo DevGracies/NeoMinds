@@ -14,7 +14,7 @@ export default function Home() {
         <section className="first-section">
           <div className="first-grid">
             <div className="first-text">
-              <h3>
+              <h3 className="liner">
                 Unlock Your Child’s Tech Potential — One Brilliant Mind at a
                 Time
               </h3>

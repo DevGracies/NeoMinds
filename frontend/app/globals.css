@@ -71,7 +71,9 @@ a {
     line-height: 1;
 
 }
-
+.liner{
+  font-size: 2rem;
+}
 .line {
   color: var(--primary-color);
   margin-bottom: 1rem;
