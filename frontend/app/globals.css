@@ -65,14 +65,11 @@ a {
 }
 
 .first-text h3 {
-  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+  font-size: clamp(3.2rem, 2.5vw, 1.5rem);
   color: #000;
   margin-bottom: 1rem;
     line-height: 1;
 
-}
-.liner{
-  font-size: 2rem;
 }
 .line {
   color: var(--primary-color);
