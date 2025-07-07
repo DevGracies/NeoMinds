@@ -40,75 +40,91 @@ a {
   text-decoration: underline;
 }
 
+/* globals.css or Home.module.css */
 .first-section {
   padding: 4rem 2rem;
-  background-color: #f9f9fc;
+  background: linear-gradient(135deg, #ffffff, #f0f5ff);
   min-height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .first-grid {
-  display: flex;
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  align-items: center;
   max-width: 1200px;
   width: 100%;
-  align-items: center;
-  /* Desktop: side by side */
-  flex-direction: row;
-  justify-content: space-between;
 }
 
 .first-text {
-  flex: 1;
+  animation: slideUp 1.5s ease-in-out;
 }
 
-.first-text h3 {
-  font-size: clamp(3.2rem, 2.5vw, 1.5rem);
-  color: #000;
-  margin-bottom: 1rem;
-    line-height: 1;
-
-}
-.line {
+.tech-title {
+  font-size: 3rem;
+  font-weight: 800;
   color: var(--primary-color);
-  margin-bottom: 1rem;
-  font-size: 1rem;
-    line-height: 1;
+  background: linear-gradient(90deg, #007f5f, var(--primary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1.5rem;
 }
 
-.description {
-  line-height: 1;
-  color: #000;
+.line {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #444;
+  max-width: 700px;
+  color: var(--primary-color);
 }
 
-.first-image {
-  flex: 1;
-}
-
-.first-img {
-  width: 100%;
-  height: auto;
+.first-image .first-img {
+  border-radius: 2rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
   object-fit: cover;
-  border-radius: 1rem;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  display: block;
+  transition: transform 0.4s ease-in-out;
+  flex: 1;
+   width: 100%;
+}
+.first-image .first-img:hover {
+  transform: scale(1.03);
 }
 
-/* Responsive: Stack image below text on small screens */
-@media (max-width: 768px) {
-  .first-grid {
-    flex-direction: column;
-    gap: 2.5rem;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
   }
-
-  .first-text {
-    text-align: center;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
+}
 
-  .first-image {
-    width: 100%;
+@keyframes slideUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tech-title {
+    font-size: 2.2rem;
+  }
+  .line {
+    font-size: 1rem;
+  }
+   .first-image {
+     width: 100%;
   }
 }
 
